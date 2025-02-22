@@ -1,0 +1,39 @@
+.payment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  font-family: "Roboto", sans-serif;
+  
+}
+.payFoot{
+  display: flex;
+  width: 1175px;
+  margin: 0 auto;
+}
+
+.payment-methods, .verified-by {
+  flex: 1;
+  text-align: flex-start;
+}
+.pay{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.payment-icons, .verified-icons {
+  height: 100px;
+}
+.payment-icons img, .verified-icons img {
+  height: 30px;
+  margin: 5px;
+}
+
+h4 {
+  font-weight: 400;
+  color: #183544;
+  margin-bottom: 10px;
+}

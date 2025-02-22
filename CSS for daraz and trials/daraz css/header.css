@@ -1,0 +1,141 @@
+/*multi line comments*/
+.header {
+  position: fixed; /* Makes the header stick to the top */
+  top: 0; /* Sticks to the top of the viewport */
+  background-color: #f85706f2;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000; /* Keeps the header on top of other elements */
+  transition: height 0.3s, background-color 0.3s; /* Adds smooth animation for any changes */
+}
+html{
+  scroll-behavior: smooth; /* Smooth scrolling for the page */
+}
+
+
+.main {
+  padding-top: 120px; /* To prevent content from hiding under the fixed header */
+}
+
+
+
+nav {
+  width: 100%;
+  margin: 0px 150px; /* Adjust this to move it left/right */
+  display: flex;
+  justify-content: right; /* Keeps the nav items aligned to the right of the container */
+  align-items: center;
+  padding: 0px 200px; /* Adjust padding inside the nav if needed */
+  box-sizing: border-box;
+  transition: display 0.3s ease;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 0 15px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe1d2;
+}
+
+.under_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.darazbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+  width: 127px;
+  margin-right: 60px; /* Add margin to separate from the search box */
+  margin-left: 0px;
+}
+
+#darazLogo {
+  height: auto;
+  width: 100%;
+}
+
+.search_box {
+  display: flex;
+  background-color: white;
+  width: 695px;
+  height: 45px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.searchBar {
+  flex: 1;
+  height: 100%;
+  border: none;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  outline: none;
+}
+
+.searchbut {
+  background-color: #ffe1d2;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.searchbut:hover {
+  background-color: #f5b89c;
+}
+
+.searchIcon {
+  height: 20px;
+  width: 20px;
+  filter: contrast(100%);
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  margin-left: 29px; /* Space between search box and cart */
+}
+
+.cartIcon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  filter: invert();
+  transition: transform 0.3s ease;
+}
+
+.cartIcon:hover {
+  transform: scale(1.1);
+}
+
